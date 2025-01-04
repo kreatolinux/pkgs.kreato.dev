@@ -38,5 +38,4 @@ params:
 
   footer:
     displayCopyright: true
-    copyright: "© [Kreato](https://kreato.dev) and [Kreato Linux contributors](https://github.com/kreatolinux/kpkg-repo/graphs/contributors)"
     displayPoweredBy: true
