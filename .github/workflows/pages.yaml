@@ -35,6 +35,10 @@ jobs:
       HUGO_VERSION: 0.132.2
       NIM_VERSION: 2.0.8
     steps: 
+      
+      - name: Init submodules
+        run: git submodule update --init --recursive
+
       - name: Install Nim
         run: |
           sudo apt update
