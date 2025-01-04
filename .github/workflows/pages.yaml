@@ -65,14 +65,14 @@ jobs:
           sudo mv out/genpkglist /bin
           cd ..
       
-      - name: Add manpages to documentation
-        run: |
-          cd src
-          for i in man/*.md; do
-            genpkglist generateManpage --file="$i" --output="$GITHUB_WORKSPACE/content/docs/manpages/$(basename $i)"
-          done
-          cd ..
-          rm -rf src
+      #- name: Add manpages to documentation
+      #  run: |
+      #    cd src
+      #    for i in man/*.md; do
+      #      genpkglist generateManpage --file="$i" --output="$GITHUB_WORKSPACE/content/docs/manpages/$(basename $i)"
+      #    done
+      #    cd ..
+      #    rm -rf src
 
       - name: Install Hugo CLI
         run: |
