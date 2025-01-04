@@ -28,6 +28,7 @@ menu:
       params:
         icon: github
 
+params:
   navbar:
     displayTitle: true
     displayLogo: true
