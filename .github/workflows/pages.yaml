@@ -86,6 +86,9 @@ jobs:
       - name: Generate packages directory
         run: |
           git clone https://github.com/kreatolinux/kpkg-repo
+          echo $GITHUB_WORKSPACE
+          ls
+          ls ..
           genpkglist generate --all --pkgPath=kpkg-repo --output="$GITHUB_WORKSPACE/content" -v      
           rm -rf kpkg-repo
  
