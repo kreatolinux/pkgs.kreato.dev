@@ -28,7 +28,6 @@ menu:
       params:
         icon: github
 
-params:
   navbar:
     displayTitle: true
     displayLogo: true
@@ -37,5 +36,6 @@ params:
       dark: "images/logo.png"
 
   footer:
-    displayCopyright: false
+    displayCopyright: true
+    copyright: "© [Kreato](https://kreato.dev) and [Kreato Linux contributors](https://github.com/kreatolinux/kpkg-repo/graphs/contributors)"
     displayPoweredBy: true
