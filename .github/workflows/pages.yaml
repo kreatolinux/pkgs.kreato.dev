@@ -86,8 +86,7 @@ jobs:
       - name: Generate packages directory
         run: |
           git clone https://github.com/kreatolinux/kpkg-repo
-          mkdir "$GITHUB_WORKSPACE/content/packages"
-          genpkglist generate --all --pkgPath=kpkg-repo --output="$GITHUB_WORKSPACE/content/packages" -v      
+          genpkglist generate --all --pkgPath=kpkg-repo --output="$GITHUB_WORKSPACE/content" -v      
           rm -rf kpkg-repo
  
       - name: Build with Hugo
